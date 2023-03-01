@@ -65,6 +65,12 @@ Lienol源21.02源码已经恢复（从2021-08-06发现编译失败，原因是21
 
 由于Lienol大侠从代码库移除了20.02的源码，尝试使用Immortal的源码21.02分支进行编译。
 
+##### 2023-03-01备注：
+
+很久没有理过这个路由器了，发现编译有问题了，重新修复了一下，现在有两个配置：
+带samba4和不带samba4，默认带samba4，需要不带samba的请从config_backup/.config.immortal拷贝内容替换根目录的.config.immortal
+主要插件 adbyby，openclash，vlmcsd, ttyd, zerotier，wireguard, samba4
+
 ### 最佳使用建议:
 使用Immortal版本，建议只启用一路WIFI，或者两路使用相同频道。
 
