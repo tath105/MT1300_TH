@@ -1,6 +1,6 @@
 # GL-iNet MT1300 路由器OpenWrt系统
 
-## 感谢P3TERX的GitHub Actions项目，感谢Lienol和Lean两位大神所提供的插件。
+## 感谢P3TERX的GitHub Actions项目，感谢Lienol和Lean两位大神所提供的插件，以及Immortal作者。
 
 ==================================================================================
 
