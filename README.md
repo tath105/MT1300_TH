@@ -9,13 +9,19 @@
 
 ===================================================================================================
 #### 2023-03-02备注：
+
 很久没有理过这个路由器了，发现编译有问题了，重新修复了一下，今后以ImmortalWrt为主，其他几个源没有时间测试了，保留原来的脚本，大家有时间愿意自己去捣鼓的就自己测试吧。
+
 Immortal现在有两个配置：
-带samba4：
-不带samba4：从config_backup/.config.immortal拷贝内容替换根目录的.config.immortal
+
+带samba4：从config_backup/.config.immortal.samba4 拷贝内容替换根目录的.config.immortal
+
+不带samba4：从config_backup/.config.immortal 拷贝内容替换根目录的.config.immortal
+
 主要插件 adbyby，openclash，vlmcsd, ttyd, zerotier, samba4
 
 使用带samba4的版本，overlay只剩6.3MB，openclash需要使用小闪存模式。
+
 使用不带samba4的版本，overlay剩下12MB
 
 
