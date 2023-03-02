@@ -33,8 +33,8 @@ env:
   FEEDS_CONF: feeds.conf.default
   PATCH_PATH: patch
   CONFIG_FILE: .config.immortal
-  CUSTOM_FEEDS: scripts/customize-feeds-immortal.sh
-  CUSTOM_CONFIG: scripts/customer-config-immortal.sh
+  #CUSTOM_FEEDS: scripts/customize-feeds-immortal.sh
+  #CUSTOM_CONFIG: scripts/customer-config-immortal.sh
   #SSH_ACTIONS: false
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
