@@ -2,28 +2,35 @@
 
 ## 感谢P3TERX的GitHub Actions项目，感谢Lienol和Lean两位大神所提供的插件。
 
-
-
-基于 GL-iNet 官方19.07.7源码，添加了Lienol和Lean两位大神的部分插件。修改 .config.gl 文件触发自动编译。
-
 1. 2021-01-21 新增从Lean源码编译的固件，修改 .config.lean 触发编译
 2. 2021-03-01 新增从Lienol源码编译的固件，修改 .config.lienol 触发编译
 3. 2021-08-20 新增从Immortal源码编译的固件，修改 .config.immortal 触发编译
 
 
-#### 默认设置：
+===================================================================================================
+#### 2023-03-02备注：
+很久没有理过这个路由器了，发现编译有问题了，重新修复了一下，今后以ImmortalWrt为主，其他几个源没有时间测试了，保留原来的脚本，大家有时间愿意自己去捣鼓的就自己测试吧。
+Immortal现在有两个配置：
+带samba4：
+不带samba4：从config_backup/.config.immortal拷贝内容替换根目录的.config.immortal
+主要插件 adbyby，openclash，vlmcsd, ttyd, zerotier, samba4
 
-主机名：MT1300
-
-IP 地址：192.168.8.1 
-
-WIFI SSID：MT1300
-
-WIFI 密码：password
+使用带samba4的版本，overlay只剩6.3MB，openclash需要使用小闪存模式。
+使用不带samba4的版本，overlay剩下12MB
 
 
+===================================================================================================
+### 基于Immortal源码编译：
 
-### 基于GL源码编译：
+使用21.02分支，主要插件 adbyby，openclash，passwall, ssr plus，ttyd, zerotier，没有samba
+
+##### 2021-08-20备注：
+
+由于Lienol大侠从代码库移除了20.02的源码，尝试使用Immortal的源码21.02分支进行编译。
+
+
+===================================================================================================
+### 基于GL源码编译：GL-iNet 官方19.07.7源码，添加了Lienol和Lean两位大神的部分插件。修改 .config.gl 文件触发自动编译。
 
 使用19.07.07分支编译，主要插件 passwall，ssr plus，openclash
 
@@ -37,7 +44,17 @@ WIFI 密码：password
 2. 另外从WIFI连接不知道为什么DHCP拿不到地址。
 
 
+#### 默认设置：
 
+主机名：MT1300
+
+IP 地址：192.168.8.1 
+
+WIFI SSID：MT1300
+
+WIFI 密码：password
+
+===================================================================================================
 ### 基于Lean源码编译：
 
 使用master分支，主要插件 adbyby，passwall，ssr plus，ttyd，zerotier
@@ -45,7 +62,7 @@ WIFI 密码：password
 1. 有两路WIFI，但是需要两路相同频段和频道，否则不工作
 
 
-
+===================================================================================================
 ### 基于Lienol源码编译：
 
 使用21.02分支，主要插件 adbyby，openclash，ttyd，zerotier
@@ -57,22 +74,7 @@ WIFI 密码：password
 Lienol源21.02源码已经恢复（从2021-08-06发现编译失败，原因是21.02代码从源中移除，不知道Lienol大侠是什么时候重新将21.02代码添加回代码源的），在2022-01-25重试该编译成功。
 
 
-### 基于Immortal源码编译：
-
-使用21.02分支，主要插件 adbyby，openclash，passwall, ssr plus，ttyd, zerotier，没有samba
-
-##### 2021-08-20备注：
-
-由于Lienol大侠从代码库移除了20.02的源码，尝试使用Immortal的源码21.02分支进行编译。
-
-##### 2023-03-01备注：
-
-很久没有理过这个路由器了，发现编译有问题了，重新修复了一下，现在有两个配置：
-带samba4和不带samba4，默认带samba4，需要不带samba的请从config_backup/.config.immortal拷贝内容替换根目录的.config.immortal
-主要插件 adbyby，openclash，vlmcsd, ttyd, zerotier，wireguard, samba4
-使用带samba4的版本，overlay只剩6.3MB，openclash需要使用小闪存模式。
-使用不带samba4的版本，overlay剩下12MB
-
+===================================================================================================
 ### 最佳使用建议:
 使用Immortal版本，建议只启用一路WIFI，或者两路使用相同频道。
 
