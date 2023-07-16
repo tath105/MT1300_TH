@@ -12,7 +12,7 @@
 name: Build MT1300 from Immortal source
 
 on:
-  repository_dispatch:
+  workflow_dispatch:
   release:
     types: published
 
