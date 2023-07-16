@@ -29,7 +29,7 @@ on:
 
 env:
   REPO_OP: https://github.com/immortalwrt/immortalwrt
-  REPO_BRANCH: tree/openwrt-21.02
+  REPO_BRANCH: original/openwrt-21.02
   FEEDS_CONF: feeds.conf.default
   PATCH_PATH: patch
   CONFIG_FILE: .config.immortal
