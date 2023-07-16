@@ -4,12 +4,12 @@ opkg install luci luci-i18n-base-zh-cn luci-compat luci-lib-ipkg wget htop libca
 # install libcap-bin, will try to get latest version later
 #https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/
 cd /tmp
-wget --no-check-certificate https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/libcap-bin_2.63-1_mipsel_24kc.ipk
+wget --no-check-certificate https://downloads.openwrt.org/snapshots/packages/mipsel_24kc/base/libcap-bin_2.69-1_mipsel_24kc.ipk
 opkg install /tmp/libcap-bin_*.ipk
 
 # install luci-app-openclash, will try to get latest version later
 #https://github.com/vernesong/OpenClash/releases
-wget --no-check-certificate https://github.com/vernesong/OpenClash/releases/download/v0.45.16-beta/luci-app-openclash_0.45.16-beta_all.ipk
+wget --no-check-certificate https://github.com/vernesong/OpenClash/releases/download/v0.45.129-beta/luci-app-openclash_0.45.129-beta_all.ipk
 opkg install /tmp/luci-app-openclash_*.ipk
 
 # install openclash core, this script will download latest version openclash core.
